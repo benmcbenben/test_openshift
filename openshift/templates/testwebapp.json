@@ -2,22 +2,11 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "django-example",
-    "annotations": {
-      "openshift.io/display-name": "Django",
-      "description": "An example Django application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/django-ex/blob/master/README.md.",
-      "tags": "quickstart,python,django",
-      "iconClass": "icon-python",
-      "openshift.io/long-description": "This template defines resources needed to develop a Django based application, including a build configuration and application deployment configuration.  It does not include a database.",
-      "openshift.io/provider-display-name": "Red Hat, Inc.",
-      "openshift.io/documentation-url": "https://github.com/openshift/django-ex",
-      "openshift.io/support-url": "https://access.redhat.com",
-      "template.openshift.io/bindable": "false"
-    }
+    "name": "testwebapp",
   },
   "labels": {
-      "template": "django-example",
-      "app": "django-example"
+      "template": "testwebapp",
+      "app": "testwebapp"
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/openshift/django-ex/blob/master/README.md.",
   "objects": [
@@ -183,7 +172,7 @@
           "spec": {
             "containers": [
               {
-                "name": "django-example",
+                "name": "testwebapp",
                 "image": " ",
                 "ports": [
                   {
