@@ -1,12 +1,10 @@
-from flask import Flask
-
-app = Flask(__name__)
+import cherrypy
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!11 test auto webhook'
+
+class TestSite(object):
+    @cherrypy.expose
+    def index(self):
+        return 'TEST TEST TEST'
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
