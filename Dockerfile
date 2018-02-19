@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY . /usr/src/test_openshift
 
 EXPOSE  8080
-CMD ["python", "/usr/src/app.py"]
+CMD ["python", "/usr/src/test_openshift/app.py"]
