@@ -8,7 +8,7 @@ RUN mkdir -p /usr/src/test_openshift
 WORKDIR /usr/src/test_openshift
 COPY requirements.txt /usr/src/test_openshift
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Bundle app source
 COPY . /usr/src/test_openshift
