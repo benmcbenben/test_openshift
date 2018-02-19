@@ -1,3 +1,7 @@
+# Test openshift
+
+# VERSION   1.0
+
 FROM alpine:latest
 
 # Update
