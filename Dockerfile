@@ -1,7 +1,7 @@
-FROM alpine:3.1
+FROM alpine:latest
 
 # Update
-RUN apk add --update python py-pip
+RUN apk add --update gcc python py-pip
 
 RUN mkdir -p /usr/src/test_openshift
 
